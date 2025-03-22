@@ -9,6 +9,11 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.dueDate {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 5px;
+}
 
 .title {
   font-size: 1.2rem;

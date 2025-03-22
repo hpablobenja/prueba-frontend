@@ -17,22 +17,18 @@ function AddTaskModal({ onClose, onSubmit }) {
     }
 
     const taskData = {
-      title: title.trim(), // Elimina espacios al inicio y al final
-      description: description.trim(), // Opcional
-      status: "pendiente", // Todas las tareas nuevas comienzan como "pendiente"
-      dueDate: dueDate || null, // Si no hay fecha, envía null
+      title: title.trim(),
+      description: description.trim(),
+      status: "pendiente",
+      dueDate: dueDate || null,
     };
+  
 
     try {
-      // Llama a la función pasada como prop para manejar la tarea
-      await onSubmit(taskData);
-      setTitle(""); // Limpia los campos después de guardar
-      setDescription("");
-      setDueDate("");
-      onClose(); // Cierra el modal
+      await onSubmit(taskData); // Aquí envías los datos
+      onClose(); // Se cierra el modal después
     } catch (error) {
       console.error("Error al guardar la tarea:", error);
-      alert("No se pudo guardar la tarea. Por favor, inténtalo nuevamente.");
     }
   };
 

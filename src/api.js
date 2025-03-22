@@ -3,7 +3,7 @@ import axios from "axios";
 
 // Configuración de Axios para la API del backend
 const api = axios.create({
-  baseURL: "http://localhost:4000/api", // Cambia esta URL a la dirección del backend en producción
+  baseURL: "https://gestor-archivos-backend.onrender.com/api", // Cambia esta URL a la dirección del backend en producción
 });
 
 // Interceptor para incluir el token JWT en cada solicitud

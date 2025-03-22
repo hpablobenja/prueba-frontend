@@ -1,0 +1,68 @@
+.container {
+  padding: 20px;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.addTaskButton {
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.addTaskButton:hover {
+  background: #218838;
+}
+
+.logoutButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.logoutButton:hover {
+  background: #bd2130;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .addTaskButton,
+  .logoutButton {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .addTaskButton,
+  .logoutButton {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+}
